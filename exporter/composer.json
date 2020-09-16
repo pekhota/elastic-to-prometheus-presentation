@@ -1,0 +1,14 @@
+{
+    "name": "pekhota/app1",
+    "authors": [
+        {
+            "name": "Pekhota",
+            "email": "pekhota.alex@gmail.com"
+        }
+    ],
+    "require": {
+        "elasticsearch/elasticsearch" : "^6.0",
+        "endclothing/prometheus_client_php": "^1.0",
+        "pragmarx/ia-arr": "^7.3"
+    }
+}

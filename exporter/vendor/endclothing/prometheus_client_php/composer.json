@@ -1,0 +1,34 @@
+{
+    "name": "endclothing/prometheus_client_php",
+    "version": "1.0.1",
+    "authors": [
+        {
+            "name": "Daniel Noel-Davies",
+            "email": "Daniel.Noel-Davies@endclothing.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^6.2",
+        "symfony/polyfill-apcu": "^1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "suggest": {
+        "ext-redis": "Required if using Redis.",
+        "ext-apc": "Required if using APCu."
+    },
+    "autoload": {
+        "psr-4": {
+            "Prometheus\\": "src/Prometheus/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "Test\\Prometheus\\": "tests/"
+        }
+    },
+    "license": "Apache-2.0"
+}

@@ -1,0 +1,72 @@
+{
+  "traceID": "0b8c7ddbada9a969",
+  "spanID": "0b8c7ddbada9a969",
+  "operationName": "publicLink",
+  "references": [],
+  "startTime":    1600177326388537,
+  "startTimeMillis": 1600177326388,
+  "duration": 616841,
+  "tags": [
+    {
+      "key": "sampler.type",
+      "type": "string",
+      "value": "const"
+    },
+    {
+      "key": "sampler.param",
+      "type": "string",
+      "value": "1"
+    },
+    {
+      "key": "http.method",
+      "type": "string",
+      "value": "GET"
+    },
+    {
+      "key": "http.url",
+      "type": "string",
+      "value": "http://jsfiller-backend.as-prod.int/internal/v1/editor/api_v3/ws/editor/auth?pages=true&project_id=4059A0AC-D700-0000-000021F6&project_version=0&client_type=js&launch=editor&origin=https%3A%2F%2Fgo2asap.airslate.com&href=https%3A%2F%2Fgo2asap.airslate.c..."
+    },
+    {
+      "key": "http.uri",
+      "type": "string",
+      "value": "/internal/v1/editor/api_v3/ws/editor/auth?pages=true&project_id=4059A0AC-D700-0000-000021F6&project_version=0&client_type=js&launch=editor&origin=https%3A%2F%2Fgo2asap.airslate.com&href=https%3A%2F%2Fgo2asap.airslate.com%2Feditor%2Fmob1%2F%3FviewerId%3D..."
+    },
+    {
+      "key": "http.status_code",
+      "type": "string",
+      "value": "202"
+    },
+    {
+      "key": "component",
+      "type": "string",
+      "value": "as-prod-jsfiller-backend"
+    },
+    {
+      "key": "internal.span.format",
+      "type": "string",
+      "value": "zipkin"
+    }
+  ],
+  "logs": [],
+  "process": {
+    "serviceName": "as-prod-jsfiller-backend",
+    "tags": [
+      {
+        "key": "hostname",
+        "type": "string",
+        "value": "as-prod-jsfiller-backend"
+      },
+      {
+        "key": "ip",
+        "type": "int64",
+        "value": "-1408172028"
+      },
+      {
+        "key": "jaeger.version",
+        "type": "string",
+        "value": "PHP-7.1.33-2+ubuntu16.04.1+deb.sury.org+1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+GET my_index2/_search
+{
+  "size": 10,
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "term" : {
+            "operationName" : "publicLink"
+          }
+        },
+        {
+          "range": {
+            "startTimeMillis": {
+              "gte": "now-5m",
+              "lte": "now",
+              "format": "epoch_millis"
+            }
+          }
+        }
+
+      ]
+    }
+  },
+  "aggs": {
+    "operation": {
+      "terms": {
+        "field": "operationName"
+      },
+      "aggs": {
+        "p": {
+          "percentiles": {
+            "field": "duration",
+            "percents": [
+              25,
+              50,
+              75,
+              90,
+              95,
+              99
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+
+DELETE my_index2
